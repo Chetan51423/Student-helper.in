@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.header{
+    min-height: 100vh;
+    /* height: 100%; */
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7),url(images/banner.png));
+    background-image: url('images/3049_iron_man.jpg');
+    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+nav img{
+    width: 100px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(252, 249, 249);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #f33446;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: rgb(60, 0, 255);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(252, 252, 249);
+    border-radius: 15px;
+    margin-top: 13%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: rgb(253, 252, 252);
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(248, 129, 10);
+    border:  2px solid #f33446;
+    padding: 12px 34px;
+    /* background:cornflowerblue; */
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 20px;
+    background: rgba(247, 211, 9, 0.6) !important; 
+
+
+}
+.hero-btn:hover{
+    background-color: #f33446;
+    transition: 0.5s;
+}
+nav .fa{
+    display: none;
+}
+
+
+/* -----course----- */
+
+.course{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background: #D6E5FA  !important;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    width: 40% !important;
+    background:  #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    background-image: url('images/certificate.png');
+}
+h3{
+    text-align: left;
+    font-weight: 700 !important;
+    margin: 10px 0;
+    font-family: serif Instrumentation Engineering;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+}
+.facilities-col:hover{
+    box-shadow: 0 0 30px 5px rgba(19, 16, 16, 0.3);
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.campus-col{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    margin: 30px;
+    border: 8px solid rgb(123, 132, 180);
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:  rgba(226,0,0,0.7);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    /* font-size: 20px; */
+    color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.facilities{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #FFAD60;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    text-align: left;
+    font-weight: 400;
+    background: #b7cec3;
+    margin: 0px 40px 50px 40px ;
+}
+.facilities-col img{
+    width: 85%;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    
+    
+}
+
+}
+.facilities-col h5{
+    margin-top: 16%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* -----testimonials---- */
+
+.testimonials{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    border: 4px solid #519259;
+
+
+    
+}
+.testimonials-col img{
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    border: 5px solid rgb(123, 132, 180);
+}
+.testimonials-col p{
+    padding: 0%;
+    
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonials-col .fa{
+    color:#f33446 ;
+}
+
+
+/* ---call to action--- */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    /* background-image:url('images/banner2.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-color: thistle;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    opacity: 1;
+    /* background: rgba(0, 0, 0, 0.6); */
+    
+}
+.cta h1{
+       
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        color: rgb(10, 240, 248);
+        font: 30px Arial, sans-serif;
+        font-weight: 500;
+        left: 10%;
+        /* transform: translate(-50%,-50%); */
+    
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    
+    padding: 30px 0;
+    background-color: #b3b2e9;
+}
+.footer h4{
+
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons.fa{
+    color:#f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+.fa-heart-0{
+    color:#f44336;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+.container{
+    background-color: rgb(243, 198, 198) ;
+    margin: 30px;
+    border-radius: 30px;
+    width: 100%;
+ 
+}
+.college_link{
+    background-color: rgb(224, 102, 14);
+    text-align: center;
+    border-radius: 30px;
+    width: 30%;
+    color-adjust: black;
+    margin: 30px 200px 30px 400px;
+    padding: 8px;
+    font-weight: 400;
+
+    
+}
+a:link {
+    color: rgb(6, 15, 6);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(9, 199, 9);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
