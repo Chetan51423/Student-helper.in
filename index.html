@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <!-- chatbot -->
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+
+<body>
+
+
+
+    <!-- =====================================================================Header Starts========================================================================== -->
+    
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img  src="images/vit_logo.png" alt=""></a>
+            <div class="nav-links"> 
+                <i class="fa fa-window-close-o"></i>
+                <ul>
+                    <li><a href="#current_event1">Home</a></li>
+                    <li><a href="login_AS.html">login</a></li>
+                    <li><a href="#college_campus1">Campus</a></li>
+                    <li><a href="#college_courses">Course</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact_us1">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Student Helper.in</h1>
+            <p style="color: rgb(51, 248, 182);">Small ayyempt to provide faster access to some important domains in college. Student will get benifits to post and solve their query. Solve confusion with some frequently ask questions. <br> Solve your college related questions here!!!  </p>
+           
+        </div>
+    </section>
+
+    <!-- =============================================================Header Ends========================================================================== -->
+
+    
+    
+    <!-- =================================================================Current Event starts============================================================== -->
+    
+    
+    <section class="slideshow" style="margin:50px; " id="current_event1">
+
+        <div>
+            <div class="main_heading">
+                <h2 style="text-align:center; margin:50px; font-family: serif; ">Current events</h2>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/cafeteria.png" style="width:100%; height:450px; border:15px solid #B762C1; border-radius:20px">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/library.png" style="width:100%; height:450px; border:15px solid #B762C1; border-radius:20px">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/basketball.png" style="width: 100%; height:450px; border:15px solid #B762C1; border-radius:20px">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/basketball.png" style="width:100%; height:450px;border:15px solid #B762C7; border-radius:20px">
+            <div class="text">Caption Three</div>
+        </div>15
+        
+
+        </div>
+            <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+              
+        </div>
+
+    </section>
+
+    <!-- ============================================================Current Event ends========================================================== -->
+
+    <section>
+        <!-- CHAT BAR BLOCK -->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Chat with us!
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
+
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+
+                                <div class="chat-bar-icons">
+                                    
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ==============================================================Blog Starts================================================================ -->
+
+    <section id="blog">
+        <h1 style="font-family: serif; background-color: rgb(178, 130, 202); width: 15%; margin-left: 650px; border-radius: 10px; padding: 10px;">Blog</h1>
+        <div class="container" style="padding: 30px;">
+            <h2 style="font-family: serif;">About this Website</h2>
+            <p>  
+                 In this website our attempt is to help students with some important things in college. Here we have provide information regarding current events going in college such as college fest, new programmes, undergoing workshops and many more. Students are able to post their doubts and get its answers from seniors. Specially design chatbot will made questioning-answering more easy. We try to provide information about clubs, differnt fest in VIT, some information regarding programming, Information regarding scholorships both government and private, we also attempt to provide information different exam we can give after undergraduation and how to proceed for their preparations. Alunmi support is important section everone can go through. In this section we get information some of our notable Alumnis.
+                 <br>
+                 <br>
+                 
+                Vishwakarma Institute of Technology, Pune, a highly commendable private institute, occupies a place of pride amongst the premier technical institutes of the western region of India. Established in the year 1983, financed and run by the Bansilal Ramnath Agrawal Charitable Trust, Pune. It is affiliated to the University of Pune . Within three decades, the institute marched towards the pinnacle of glory through its remarkable achievements and laurels in the field of engineering education of high calibre. According to Indian history, 'Vishwakarma' is a divine architect-engineer. It is believed that He fashioned this world with His rare engineering skills. The Trust adopted this name with a vision to develop engineers of high calibre, who could take up challenges of any type of engineering job and become successful in the chosen career. 
+
+                The campus spread over 17.625 acres of land, boasts of lush green lawns that provide an ambience and a serene atmosphere of ancient Gurukuls far from the madding crowd. 
+            </p>
+        </div>
+
+    </section>
+
+    <!-- =================================================================Blog Ends======================================================================= -->
+
+
+
+
+    <!-- =============================================================More About College starts=============================================================== -->
+
+    <section class="course" id="college_courses">
+        <h1>More about College</h1>
+        <p> This section is for some important parts to know about. Here we discuss about cources offer in VIT. Those courses includes Intermediate, Degree and Postgraduation. Some important section like clubs,VIT fest, scholorships,programming support alimni support.</p>
+        
+        
+
+        <div class="row" >
+            <div class="course-col" >
+                
+                <h3>Undergraduate-B.Tech.</h3>
+                <p style="text-align: left; padding-left: 80px;">
+                -->Chemical Engineering	
+                    <br>
+                -->Computer Engineering 	
+                    <br>
+                -->E & TC Engineering 	
+                    <br>
+                -->Information Technology
+                    <br>	
+                -->Instrumentation & Control Engg
+                    <br>	
+                -->Mechanical Engineering
+                    <br>	
+                -->Artificial Intelligence and Data Science</p>
+                <div class="college_link" style="margin-left: 0% !important; width: 50%; ">
+                    <a href="https://www.vit.edu/index.php/admissions/undergraduate-b-tech/courses-sanctioned-intake" >Click here for more information</a>
+                </div>
+                
+
+            </div>
+            <div class="course-col" style="text-align: left; padding-left: 80px;">
+                <h3>Degree</h3>
+                <p>-->Chemical Engineering	
+                    <br>
+                -->Computer Engineering 	
+                    <br>
+                -->E & TC Engineering 	
+                    <br>
+                -->Industrial & Production Engineering
+                    <br>	
+                -->Instrumentation Engineering
+                    <br>	
+                -->Mechanical Engineering
+                    <br>	
+                </p>
+                <div class="college_link"     style="margin-left: 0% !important; width: 60%; margin-top: 50px; ">
+                    <a href="https://www.vit.edu/index.php/admissions/phd-programs" >Click here for more information</a>
+                </div>
+
+            </div>
+            <div class="course-col" style="text-align: left; padding-left: 80px;">
+                <h3>Postgraduation</h3>
+                <p>-->Chemical Engineering	
+                    <br>
+                -->Computer Engineering 	
+                    <br>
+                -->E & TC Engineering 
+                </p>
+                <div class="college_link" style="margin-left: 0% !important; width: 60%; margin-top: 110px; ">
+                    <a href="https://www.vit.edu/index.php/admissions/postgraduate-m-tech/courses-sanctioned-intake" >Click here for more information</a>
+                </div>
+
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="facilities-col">
+                <p>
+                    <a href="clubs.html">
+                    <img src="images/clubs_image.jpg" >
+                    </a>
+                </p>
+               
+                <h3>Clubs In VIT</h3>
+                <p>VIT has numbers of Innovative clubs. Which helps students gaining knowledge, skills and experience in leadership, communication, problem-solving, group development and management, finance, presentation and public speaking</p>
+
+                
+            </div>
+            <div class="facilities-col">
+                <p>
+                    <a href="vit_fest.html">
+                    <img src="images/college_fest2.jpg">
+                    </a>
+                </p>
+                
+                <h3>VIT Fest</h3>
+                <p >VIT orgainised some very interesting fest. During Those fest days student actively participate in different activities like sports, dance, public plays,etc. The four aspects of college fests are: planning, teamwork, leadership, and multi-tasking. According to experts, campus fests are a great platform. </p>
+
+            </div>
+            <div class="facilities-col">
+                <p>
+                    <a href="scholorship.html">
+                    <img src="images/scholorship_image.jpg">
+                    </a>
+                </p>
+                
+                <h3>Scholorships</h3>
+                <p>This section contain information regarding different scholorship available for engineering students. In this section we have give some importanrt scholorships for student that they should apply during their academic years. We have mention some portals which gives both goverment and private scholourships.</p>
+            </div>
+            <div class="facilities-col">
+                <p>
+                    <a href="programming.html">
+                    <img src="images/programming_image2.jpg">
+                    </a>
+                </p>
+                
+                <h3>Programming Support</h3>
+                <p>In today's world programming became the backbone of industries. Every engineering student must know some nbasic programming languages. We have given here some important suggestions, guidance and programming groups in our college. This will definetely helps everyone to enhance programming qualities.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="facilities-col">
+                <p>
+                    <a href="Exam.html">
+                    <img src="images/Exam_preparation2.jpg" >
+                    </a>
+                </p>
+                <h3>Prepare For Exam</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla eaque porro cumque fugit maiores neque omnis, totam ullam, doloribus dolorem repellendus, necessitatibus quaerat veniam cupiditate voluptatem ipsam a adipisci?</p>
+
+                
+            </div> 
+            <div class="facilities-col">
+                <p>
+                    <a href="clubs.html">
+                    <img src="images/Career_guidance4.jpg">
+                    </a>
+                </p>
+                <h3>Career Guidance</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla eaque porro cumque fugit maiores neque omnis, totam ullam, doloribus dolorem repellendus, necessitatibus quaerat veniam cupiditate voluptatem ipsam a adipisci?</p>
+
+            </div>
+            <div class="facilities-col">
+                <p>
+                    <a href="alumni.html">
+                    <img src="images/alumni_image.png">
+                    </a>
+                </p>
+                <h3>Alumni Suppor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla eaque porro cumque fugit maiores neque omnis, totam ullam, doloribus dolorem repellendus, necessitatibus quaerat veniam cupiditate voluptatem ipsam a adipisci?</p>
+            </div>
+            <div class="facilities-col">
+                <p>
+                    <a href="clubs.html">
+                    <img src="images/important_contact2.jpeg">
+                    </a>
+                </p>
+                
+                <h3>Important College Contacts</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla eaque porro cumque fugit maiores neque omnis, totam ullam, doloribus dolorem repellendus, necessitatibus quaerat veniam cupiditate voluptatem ipsam a adipisci?</p>
+            </div>
+        </div>
+        
+        
+        
+        
+    </section>
+
+    <!-- ====================================================================More About College  ends=============================================================== -->
+
+    <!-- ------Campus------- -->
+
+    <section id="college_campus1">
+        <div class="campus">
+            <div class="container">
+                <h1>College Campus</h1>
+                <p>This section has given some pictures of campus. To give basic idea about college infrastructure. You will get idea about the building or exact perseption of college enviorment. 
+                </p>
+        
+                <div class="row">
+                    <div class="campus-col">
+                        <img src="images/campus1.jpg" >
+                        <div class="layer">
+                            <h3></h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="images/campus2.jpg" >
+                        <div class="layer">
+                            <h3></h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="images/campus3.jpg" >
+                        <div class="layer">
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    
+
+    
+
+
+    <!-- ----What Our Student Says------ -->
+
+    <section class="testimonials">
+        <h1>What Student Says</h1>
+        <p>Here are some reviews of students about their experiences in college.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/user8.jpeg">
+                <div>
+                    <p>I like collage syllabus, its way more different rest of the college, but quite interesting one!! </p>
+                    <h3>Ajinkya Sathe</h3>
+                    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>Most amazing thing i like about college is its project base learning. It helps students a lot. </p>
+                <h3>Prasad Sanap </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user7.jpg">
+                <div>
+                    <p>I am facinated with college codding culture. College's enclination towards coding can be seen from its codding based syllabus!! </p>
+                <h3>Rushekesh Kale</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user5.jpg">
+                <div>
+                    <p>College have many technical and codding clubs which i like the most. codding culture also dominates in clubs also.</p>
+                <h3>Aniruddha Shrikhande</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+
+<!--creators-->
+    <section class="facilities">
+        <h1>Meet Creators</h1>
+        <p>Get in touch with website creators. Contact them for more information.</p>
+
+        <div class="row">
+            <div class="facilities-col" style="border:5px solid grey">
+                <p>
+                    <a href="clubs.html">
+                    <img src="images/chetan2.jpeg" style="height: 198.050px !important; border-radius: 100px !important; border: 7px solid rgb(70, 67, 64);">
+                    </a>
+                </p>
+               
+                <h3>Chetan Shinde</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla eaque porro cumque fugit maiores neque omnis, </p>
+
+                
+            </div>
+            <div class="facilities-col" style="border:5px solid grey">
+                <p>
+                    <a href="clubs.html">
+                    <img src="images/akash4.jpeg" style="height: 198.050px !important; border-radius: 100px !important; border: 7px solid rgb(70, 67, 64);">
+                    </a>
+                </p>
+                <h3>Akash Shekhavat</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla eaque porro cumque fugit maiores neque omnis, </p>
+
+            </div>
+            <div class="facilities-col" style="border:5px solid grey">
+                <p>
+                    <a href="clubs.html">
+                    <img src="images/cafeteria.png" style="height: 198.050px !important; border-radius: 100px !important; border: 7px solid rgb(70, 67, 64);">
+                    </a>
+                </p>
+                <h3>Samiksha Shinde</h3>
+                <p>Making the contact us page so that the users can share their thoughts or queries with us and collecting the required information for our website.</p>
+            </div>
+            <div class="facilities-col" style="border:5px solid grey">
+                <p>
+                    <a href="clubs.html">
+                    <img src="images/madhuri.jpeg" style="border-radius: 100px !important; border: 7px solid rgb(70, 67, 64);">
+                    </a>
+                </p>
+                <h3>Madhuri Sheklke</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla eaque porro cumque fugit maiores neque omnis, </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- google map -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4421287934633!2d73.86601501446667!3d18.463621887442198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1642007345950!5m2!1sen!2sin" width="600" height="450" style="border:10px solid orange;width:80%; margin:50px 50px -50px 150px; border-radius:40px" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+    
+
+    <!-- -------Call to Action------ -->
+
+
+    <section id="contact_us1" >
+        
+        <div class="cta">
+            <a href="index_contact_us.html" class="hero-btn" style="color: black !important;">Contact Us</a>
+        </div>
+        
+
+    </section>
+
+    <!-- -------Call to Action------ -->
+
+    <section class="footer">
+        <h4> About Us</h4>
+        <p style="colour:black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero tempora veritatis veniam a repellat officiis libero quisquam <br> pariatur explicabo, non necessitatibus nulla dolores quos excepturi eligendi ipsam inventore quidem cumque.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <div>
+                <p>Made with love by CS-14</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 1500); // Change image every 2 seconds
+    }
+
+</script>
+
+</html>
